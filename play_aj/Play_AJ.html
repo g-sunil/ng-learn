@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="bootstrap.min.js"></script>
+
+    <script src="angular.js"></script>
+    <!-- http://teropa.info/blog/2014/10/24/how-ive-improved-my-angular-apps-by-banning-ng-controller.html -->
+  </head>
+  <body>
+  <div ng-app="myApp">
+  <div ng-controller="MyCtrl as app">
+    <!-- Templates making -->
+    <script type='text/ng-template' id='quote1.html'>
+        <div id='1'>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Quote</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunil</td>
+                    <td>My code never goes wrong, what ever i say it does :)</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </script>
+
+    <script type='text/ng-template' id='quote2.html'>
+        <div id='2'>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Quote</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunil</td>
+                    <td>My code never goes wrong, what ever i say it does :)</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </script>
+
+    <script type='text/ng-template' id='quote3.html'>
+        <div id='3'>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Quote</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunil</td>
+                    <td>My code never goes wrong, what ever i say it does :)</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </script>
+
+    <script type='text/ng-template' id='quote4.html'>
+        <div id='4'>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Quote</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunil</td>
+                    <td>My code never goes wrong, what ever i say it does :)</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </script>
+
+    <script type='text/ng-template' id='quote5.html'>
+        <div id='5'>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Quote</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunil</td>
+                    <td>My code never goes wrong, what ever i say it does :)</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </script>
+    <!-- till here - Templates making -->
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Quote per day</h1>
+        <h2>Date: <span ng-bind="date | date:'medium'"></span></h2>
+      </div>
+
+      <div class="row">
+        <quote1></quote1>
+        <quote2></quote2>
+        <quote3></quote3>
+        <quote4></quote4>
+        <quote5></quote5>
+        <quotenew date="date"></quotenew>
+      </div>
+    </div>
+  </div>
+  </body>
+
+
+  <input ng-model="namee"></input>
+  <input ng-model="call"></input>
+  <span ng-bind="namee"></span>
+  <span ng-if="call" ng-bind="'--'+ call"></span>
+</div>
+<!-- 4.0a36 - source
+4.4.43 - source -->
+<script src="app.js"></script>
+
+
+</body>
+</html>
